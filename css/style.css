@@ -75,8 +75,13 @@ i {
 
 .navbar .btn-primary {
     background-color: #28a745 !important;
-    padding: 5px 20px !important;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
+    font-size: 15px !important;
 }
 
 .navbar .btn-primary:hover {
@@ -93,6 +98,21 @@ i {
 .navbar-nav {
     margin-right: 10px;
     /* Brings nav links closer to the search box */
+}
+
+@media (max-width:1024px) {
+    .navbar .navbar-brand {
+        font-size: 18px !important;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 13px !important;
+    }
+
+    .navbar .btn-primary {
+        font-size: 12px !important;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -583,6 +603,41 @@ i {
     color: #fff;
 }
 
+@media (max-width:1024px) {
+    .tren_box-container {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        /* 1 box per row on small screens */
+    }
+
+    .tren_box {
+        padding: 15px !important;
+        flex-direction: column;
+        align-items: flex-center;
+    }
+
+    .tren_img {
+        margin-bottom: 15px;
+        width: 50%;
+        flex: 0 0 auto;
+    }
+
+    .tren_sale {
+        margin-bottom: 15px;
+    }
+
+    .Tren_details {
+        margin: 0 0 15px;
+        text-align: center;
+    }
+
+    .tren_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
 /* Responsive Behavior */
 @media (max-width: 768px) {
     .tren_box-container {
@@ -751,6 +806,13 @@ i {
 /* Reveal Text on Hover */
 .store-link:hover span {
     bottom: 0;
+}
+
+@media (max-width:1024px) {
+    .store_columns {
+        grid-template-columns: repeat(3, 1fr);
+        /* 2 columns on smaller screens */
+    }
 }
 
 /* Responsive Behavior */
