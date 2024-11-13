@@ -1,0 +1,884 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif !important;
+}
+
+body {
+    /* background-color: #e6f0f5; */
+    background-color: #dcdddd2a !important;
+    font-size: 100%;
+}
+
+/* Ensure that FontAwesome icons are displayed */
+i {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important; /* Ensure solid icons display correctly */
+}
+
+
+.navbar {
+    /* background-color: rgb(0, 140, 255) !important; */
+    background-color: rgb(34, 95, 145) !important;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* Optional: Adjusts the gap between the dropdown toggle and menu */
+}
+
+.dropdown-menu {
+    margin-top: 0.5rem;
+    /* Controls spacing if needed */
+    transition: opacity 0.3s ease;
+    /* Smooth transition effect */
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar-nav {
+    margin-right: 10px;
+    /* Brings nav links closer to the search box */
+}
+
+@media (max-width:576px) {
+    .navbar .navbar-brand{
+        margin: 0px !important;
+    }
+}
+
+.today-section-title {
+    padding: 50px 0px 20px 0 !important;
+    text-align: center !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+.today_carousel {
+    padding: 0px 40px;
+}
+
+.coupon-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.coupon-card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: transparent !important;
+}
+
+.carousel-indicators li {
+    background-color: blue;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: darkblue;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 50% !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+@media (max-width: 992px) {
+    .today_carousel {
+        padding: 0px 20px;
+    }
+
+    .coupon-card {
+        max-width: 300px;
+    }
+
+    .coupon-card img {
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .today_carousel {
+        padding: 0 10px;
+    }
+
+    .d-flex {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .coupon-card {
+        max-width: 220px;
+        margin: 10px;
+    }
+
+    .coupon-card img {
+        max-width: 60px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .today-section-title {
+        font-size: 24px !important;
+    }
+
+    .coupon-card {
+        padding: 15px;
+    }
+
+    .coupon-card img {
+        max-width: 50px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+
+/* Today Two */
+.today_two .box-card {
+    width: 100% !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.today_two .box-card:hover {
+    transform: translateY(-5px);
+}
+
+.today_two .box-card img {
+    width: 100% !important;
+    /* Makes the image stretch to the container's width */
+    height: 130px !important;
+    /* Ensures consistent height for all images */
+    object-fit: contain !important;
+    /* Fills the space, maintaining aspect ratio and cropping excess */
+    margin: 10px 0 !important;
+    /* Adds margin for spacing */
+}
+
+.today_two .box-card span {
+    color: #333;
+    /* Slightly darker text for better readability */
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: center;
+    /* Centers text */
+    font-weight: bold;
+}
+
+.today_two .box-card p {
+    margin: 0;
+    background-color: rgb(41, 236, 194);
+    color: #fff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .today_two .box-card img {
+        height: 100px;
+        /* Adjusts image height for smaller screens */
+    }
+
+    .today_two .box-card p {
+        font-size: 13px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .today_two .box-card img {
+        height: 80px;
+        /* Further adjusts height for mobile devices */
+    }
+
+    .today_two .box-card span {
+        font-size: 14px;
+    }
+}
+
+
+/* Trending Box */
+.trending-box {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.trending-box h5 {
+    margin-bottom: 10px !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+}
+
+.trending-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.trending-links a {
+    text-decoration: underline !important;
+    color: #474747 !important;
+    font-size: 16px !important;
+    margin: 0 10px !important;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .trending-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trending-links a {
+        margin: 5px 0;
+    }
+}
+
+/* Banner Section */
+
+.banner_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.banner_body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left_side,
+.right_side {
+    flex: 1;
+    padding: 10px;
+}
+
+.right_side {
+    text-align: left;
+}
+
+.right_side h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right_side p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.right_side a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.right_side a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner_body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right_side h1 {
+        font-size: 24px;
+    }
+
+    .right_side p {
+        font-size: 14px;
+    }
+
+    .right_side a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner_body {
+        padding: 10px;
+    }
+
+    .right_side h1 {
+        font-size: 20px;
+    }
+
+    .right_side p {
+        font-size: 12px;
+    }
+
+    .right_side a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Today Trending Start */
+
+/* General Styling for the Trending Today Section */
+.tren_today {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 120px !important;
+}
+
+.tren_today h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Container for the boxes */
+.tren_box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Box Styling */
+.tren_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tren_box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.tren_img {
+    flex: 0 0 120px;
+    margin-right: 20px;
+}
+
+.tren_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Sale Badge Styling */
+.tren_sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ffeded;
+    border-radius: 5px;
+}
+
+.tren_sale h5 {
+    color: #ff4a4a;
+    font-size: 24px;
+    margin: 0;
+}
+
+.tren_sale p {
+    color: #000;
+    margin: 0;
+}
+
+.tren_sale span {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Details Styling */
+.Tren_details {
+    flex: 1;
+    text-align: left;
+    margin: 0 15px;
+}
+
+.Tren_details h4 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.Tren_details p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Buttons Styling */
+.tren_buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tren_buttons button,
+.tren_buttons a {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.tren_buttons button:hover,
+.tren_buttons a:hover {
+    background-color: #0056b3;
+}
+
+.tren_buttons a {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .tren_box-container {
+        gap: 15px;
+    }
+
+    .tren_box {
+        padding: 15px !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tren_img {
+        margin-bottom: 15px;
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .tren_sale {
+        margin-bottom: 15px;
+    }
+
+    .Tren_details {
+        margin: 0 0 15px;
+        text-align: center;
+    }
+
+    .tren_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tren_today {
+        padding: 15px !important;
+    }
+
+    .tren_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tren_today h1 {
+        font-size: 2rem;
+    }
+
+    .tren_sale {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .tren_sale h5 {
+        font-size: 20px;
+    }
+
+    .Tren_details h4 {
+        font-size: 16px;
+    }
+
+    .Tren_details p {
+        font-size: 13px;
+    }
+
+    .tren_buttons {
+        gap: 8px;
+    }
+
+    .tren_buttons button,
+    .tren_buttons a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}
+
+
+/* Popular Stores start */
+
+/* General Styling for Popular Store Section */
+.popular_store {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.popular_store h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Container for Columns */
+.store_columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Individual Columns */
+.store_column {
+    flex: 1;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual Store Links Styling */
+.store_column div a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+}
+
+.store_column div a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .store_columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store_column {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .store_column div a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .popular_store h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Question Section Start */
+
+.accordion_section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.accordion_section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    /* Dark Blue-Grey for header */
+    font-weight: bold;
+}
+
+.accordion_item {
+    margin-bottom: 10px;
+    border: 1px solid #dcdde1;
+    /* Light Grey Border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion_button {
+    background-color: #3498db;
+    /* Professional Blue Background */
+    color: #ffffff;
+    /* White Text */
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    border-radius: 5px;
+    /* Adds a rounded edge */
+}
+
+.accordion_button:hover,
+.accordion_button.active {
+    background-color: #2980b9;
+    /* Darker Blue for hover/active state */
+    color: #ecf0f1;
+    /* Light Grey-White text */
+}
+
+.accordion_content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #dcdde1;
+    background-color: #f4f6f9;
+    /* Light Grey background for content */
+    color: #2c3e50;
+    /* Dark Blue-Grey text */
+    font-size: 0.95rem;
+}
+
+.accordion_content.show {
+    display: block;
+}
+
+.arrow {
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.accordion_button.active .arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Footer Section Start */
+
+/* Footer Styles */
+.footer_container {
+    background-color: rgb(34, 95, 145) !important;
+    /* Black background for a professional look */
+    color: #ffffff;
+    /* White text color */
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_column {
+    flex: 1 1 200px;
+    /* Ensures columns wrap when screen size is reduced */
+    margin-bottom: 20px;
+}
+
+.footer_column h3,
+.footer_column h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer_column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_column ul li {
+    margin-bottom: 8px;
+}
+
+.footer_column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.footer_column ul li a:hover {
+    color: #3498db;
+    /* Blue for hover state */
+}
+
+.footer_column ul li a i {
+    font-size: 10px !important;
+}
+
+.footer_column select.country_select {
+    background-color: #34495e;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.footer_column select.country_select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Bottom Section */
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #34495e;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer_accessibility a,
+.footer_copyright p {
+    margin: 0;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer_accessibility a:hover {
+    color: #3498db;
+}
+
+/* Icons */
+.fa {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer_column ul li a:hover .fa {
+    color: #3498db;
+}
