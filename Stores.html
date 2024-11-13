@@ -21,50 +21,65 @@
 
     <style>
         /* Top Merchant Section Start */
-        .container-fluid {
-            padding: 20px;
-        }
 
         .top-merchants h2 {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-weight: bold;
             text-transform: uppercase;
+            font-size: 1.8rem;
+            color: #333;
         }
 
         .merchant-container {
             display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
         }
 
         .merchant-column {
-            width: 22%;
-            /* Adjust width as needed for responsive design */
+            flex: 1 1 19%;
+            /* Each column takes up 19% of the container width */
             display: flex;
             flex-direction: column;
-            gap: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            gap: 10px;
         }
 
         .merchant-column a {
-            color: #007bff;
+            color: #555;
+            /* Light grey text color */
             text-decoration: none;
             padding: 5px 0;
             transition: color 0.3s;
+            font-size: 1rem;
         }
 
         .merchant-column a:hover {
-            color: #0056b3;
+            color: #333;
+            /* Darker color on hover */
         }
 
-        .container-fluid {
-            padding: 20px;
+        /* Styling for 10 items per column */
+        .merchant-column a {
+            display: block;
+            margin-bottom: 5px;
         }
+
+        /* Responsive layout adjustments */
+        @media (max-width: 992px) {
+            .merchant-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .merchant-column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        /* Recently Added Section Start */
 
         .recently-added h2 {
             text-align: center;
@@ -160,7 +175,6 @@
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
-
     <!-- Recently Added Section Start -->
     <section class="container mt-5 today_two">
         <h1 class="text-center text-uppercase fw-bold">Recently Added & Trending Stores</h1>
@@ -220,7 +234,7 @@
     <!-- Recently Added Section Start -->
 
     <!-- Top Merchant Section Start -->
-    <section class="container-fluid">
+    <section class="container-fluid p-5">
         <div class="top-merchants">
             <h2>Top Merchants</h2>
             <hr>
@@ -283,7 +297,7 @@
     <!-- Top Merchant Section End -->
 
     <!-- Recently Added Section Start -->
-    <section class="container-fluid">
+    <section class="container-fluid mb-4">
         <div class="recently-added">
             <h2>Recently Added</h2>
             <hr>
@@ -305,11 +319,7 @@
         </div>
     </section>
     <!-- Recently Added Section End -->
-
-
-
     <!-- Main Section End -->
-
 
     <!-- Footer Section Start -->
     <footer class="footer_container">
