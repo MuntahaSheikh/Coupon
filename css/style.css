@@ -73,6 +73,12 @@ i {
 
 }
 
+.navbar-nav .nav-item .active {
+    background-color: #28a745 !important;
+}
+
+
+
 .navbar .btn-primary {
     background-color: #28a745 !important;
     width: 90px;
@@ -143,15 +149,30 @@ i {
     height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
 
+.coupon-card span {
+    color: grey;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+.coupon-card h5 {
+    color: #28a745 !important;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .coupon-card img {
-    max-width: 80px;
-    margin-bottom: 15px;
+    width: 190px !important;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 15px !important;
 }
 
 .carousel-control-prev-icon,
@@ -161,17 +182,6 @@ i {
     background-color: transparent !important;
 }
 
-.carousel-indicators li {
-    background-color: blue;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 5px;
-}
-
-.carousel-indicators .active {
-    background-color: darkblue;
-}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -480,6 +490,7 @@ i {
     color: #333;
     font-weight: 600;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* Container for the boxes */
@@ -718,6 +729,33 @@ i {
     }
 }
 
+.pagination-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    margin: 10px 10px !important;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-controls button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
 /* Popular Stores Section */
 .popular_store {
     text-align: center;
@@ -880,7 +918,7 @@ i {
 
 .accordion_button:hover,
 .accordion_button.active {
-    background-color: #2980b9;
+    background-color: #2980b9 !important;
     /* Darker Blue for hover/active state */
     color: #ecf0f1;
     /* Light Grey-White text */
@@ -911,7 +949,7 @@ i {
 }
 
 .accordion_button.active .arrow {
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg) !important;
 }
 
 /* Footer Section Start */
