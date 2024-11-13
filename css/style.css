@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
     font-family: sans-serif !important;
 }
 
@@ -14,13 +15,15 @@ body {
 /* Ensure that FontAwesome icons are displayed */
 i {
     font-family: 'Font Awesome 5 Free' !important;
-    font-weight: 900 !important; /* Ensure solid icons display correctly */
+    font-weight: 900 !important;
+    /* Ensure solid icons display correctly */
 }
 
 
 .navbar {
     /* background-color: rgb(0, 140, 255) !important; */
-    background-color: rgb(34, 95, 145) !important;
+    /* background-color: rgb(41, 236, 194) !important; */
+    background-color: #0056b3;
 }
 
 .navbar .navbar-brand {
@@ -50,6 +53,30 @@ i {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.3px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(228, 228, 35);
+
+}
+
+.navbar .btn-primary {
+    background-color: #28a745 !important;
+    padding: 5px 20px !important;
+    border: 1px solid black;
+}
+
+.navbar .btn-primary:hover {
+    border: 1px solid white;
+    background-color: rgb(53, 53, 175) !important;
+}
+
+.navbar .btn-secondary{
+    background-color: #007bff;
+    border: 1px solid black;
+    padding: 5px 20px !important;
 }
 
 .navbar-nav {
@@ -58,7 +85,7 @@ i {
 }
 
 @media (max-width:576px) {
-    .navbar .navbar-brand{
+    .navbar .navbar-brand {
         margin: 0px !important;
     }
 }
@@ -665,13 +692,15 @@ i {
     color: #333;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-weight: 600;
     background-color: #f9f9f9;
     transition: all 0.3s;
 }
 
 .store_column div a:hover {
-    background-color: #007bff;
+    background-color: rgb(228, 228, 35) !important;
     color: #fff;
+    font-weight: bold;
     border-color: #007bff;
 }
 
@@ -723,7 +752,7 @@ i {
 }
 
 .accordion_button {
-    background-color: #3498db;
+    background-color: #28a745;
     /* Professional Blue Background */
     color: #ffffff;
     /* White Text */
@@ -780,7 +809,8 @@ i {
 
 /* Footer Styles */
 .footer_container {
-    background-color: rgb(34, 95, 145) !important;
+    /* background-color: rgb(34, 95, 145) !important; */
+    background-color: #0056b3;
     /* Black background for a professional look */
     color: #ffffff;
     /* White text color */
@@ -828,7 +858,7 @@ i {
 }
 
 .footer_column ul li a:hover {
-    color: #3498db;
+    color: rgb(228, 228, 35) !important;
     /* Blue for hover state */
 }
 
@@ -869,7 +899,8 @@ i {
 }
 
 .footer_accessibility a:hover {
-    color: #3498db;
+
+    color: rgb(228, 228, 35) !important;
 }
 
 /* Icons */
@@ -880,5 +911,5 @@ i {
 }
 
 .footer_column ul li a:hover .fa {
-    color: #3498db;
+    color: rgb(228, 228, 35) !important;
 }
